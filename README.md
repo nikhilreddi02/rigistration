@@ -1,1 +1,1 @@
-# risgistration
+# rigistration
