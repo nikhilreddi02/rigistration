@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css registartion form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+           margin:0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: "Poppins",sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .wrapper{
+            width: 420px;
+            background-color:transparent;
+            color: rgb(230, 219, 219);
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .wrapper .input-box{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+        .input-box  input { 
+            width: 100%;
+            height: 100%;
+            background:transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255,255,255, .2);
+            border-radius: 40px;
+            color: white;
+            padding: 20px 45px 20px 20px;
+            font-size:16px ;
+        }
+        .input-box input::placeholder {
+            color: white;
+        }
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+        .wrapper .remember-forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin:-15px 0 15px;
+        }
+        .remember-forgot label input {
+            accent-color: white;
+            margin-right: 3px;
+        }
+        .remember-forgot a{
+            color: white;
+            text-decoration: none;
+        }
+        .remember-forgot a:hover{
+            text-decoration: underline;
+        }
+        .wrapper .btn{
+            width: 100%;
+            height: 45px;
+            background:white;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba( 0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: purple;
+            font-weight: 600;
+        }
+        .wrapper .register-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .register-link p a{
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .register-link p a:hover{
+            text-decoration: underline;
+
+        }
+    </style>
+</head>
+<body>
+    <div  class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username" required>
+                <i class='bx bxs-user'></i>                
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="remember-forgot">
+               <label><input type="checkbox">Remember me</label>
+               <a href="#">forgot password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register link</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
